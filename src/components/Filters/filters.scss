@@ -1,0 +1,11 @@
+@import "../../styles/defaultmixin.scss";
+.filter-container{
+    @include displayflex;
+    margin-bottom: 1em;
+    .filter-items{
+        padding: 1rem;
+        .options{
+            padding: 0.4rem;
+        }
+    }
+}

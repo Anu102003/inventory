@@ -1,0 +1,41 @@
+@import "../../styles/defaultmixin.scss";
+
+.addedit-popup-container {
+    .h1 {
+        @include fontS28B700;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .form-fields{
+        display: flex;
+        gap:1.5rem;
+        margin: 2rem 0 2rem 4rem;
+        .label{
+            @include fontS17B600;
+            width: 25%;
+        }
+        input{
+            width: 25%;
+            @include inputBasic;
+            height: 30px;
+            @include fontS15B500;
+            border: 1px solid gray;
+            padding: 7px 1px 7px 0.5rem;
+            border-radius: 5px;
+            @include displayflex
+        }
+    }
+    .submit-container {
+        margin-top: 1.5rem;
+        width: 100%;
+        @include displayflex;
+
+        .btn {
+            @include btn-basic;
+        }
+
+        .submit {
+            @include btn(#28a745, white)
+        }
+    }
+}
